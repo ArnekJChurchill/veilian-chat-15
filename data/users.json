@@ -1,1 +1,9 @@
-
+{
+  "users": [
+    {
+      "username": "@ArnekChurchill",
+      "password": "988585aw",
+      "isModerator": true
+    }
+  ]
+}
