@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veilian Chat 15</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://js.pusher.com/8.0/pusher.min.js"></script>
+</head>
+<body>
 
+<div id="loginBox">
+  <h2>Veilian Chat 15</h2>
+  <input type="text" id="username" placeholder="Username e.g. @exampleuser">
+  <input type="password" id="password" placeholder="Password">
+  <button id="loginBtn">Login</button>
+  <button id="signupBtn">Sign Up</button>
+</div>
+
+<div id="chatContainer" style="display:none;">
+  <div id="chatHeader">
+    <h2>Veilian Chat</h2>
+    <button id="closeChat">X</button>
+  </div>
+
+  <div id="chatBox"></div>
+  <input type="text" id="messageInput" placeholder="Type a message...">
+  <button id="sendBtn">Send</button>
+
+  <div id="adminPanel" style="display:none;">
+    <h3>Moderator Panel</h3>
+    <input type="text" id="banUsername" placeholder="Username to ban/unban">
+    <button id="banBtn">Ban</button>
+    <button id="unbanBtn">Unban</button>
+    <div id="bannedList"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
